@@ -13,3 +13,7 @@ NEWSPIDER_MODULE = 'hello_scrapy.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'hello_scrapy (+http://www.yourdomain.com)'
+
+ITEM_PIPELINES = {
+'hello_scrapy.pipelines.NFLTeamPipeline':300
+}
